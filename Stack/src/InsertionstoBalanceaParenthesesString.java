@@ -1,4 +1,3 @@
-
 import java.util.Stack; // Imports Stack class for tracking open parentheses
 
 public class InsertionstoBalanceaParenthesesString { // Declares public class for parentheses balancing solution
