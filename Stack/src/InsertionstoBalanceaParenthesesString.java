@@ -3,8 +3,8 @@ import java.util.Stack; // Imports Stack class for tracking open parentheses
 public class InsertionstoBalanceaParenthesesString { // Declares public class for parentheses balancing solution
 
     // Returns minimum number of insertions to balance s
-    public int minInsertions(String s) { // Method to compute minimum insertions
-        Stack<Character> stack = new Stack<>(); // Stack to store unmatched open parentheses
+    public int minInsertions(String s) {
+        Stack<Character> stack = new Stack<>();
         int insertions = 0; // Counter for required insertions
         int i = 0; // Index to iterate through string
 
