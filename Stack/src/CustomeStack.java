@@ -136,6 +136,7 @@ public class CustomeStack { // Declares a public class named CustomeStack (note:
             System.out.println("Pop: " + stack2.pop());  // Pops last item (expected: 100), ptr = -1
             System.out.println("Is empty? " + stack2.isEmpty()); // Checks if empty (expected: true)
 
+
             // Test Case 3: Edge cases (empty stack operations)
             System.out.println("\nTest Case 3: Edge Cases"); // Prints test case header
             CustomeStack stack3 = new CustomeStack(2); // Creates a stack with size 2
@@ -145,6 +146,7 @@ public class CustomeStack { // Declares a public class named CustomeStack (note:
             } catch (Exception e) { // Catches the thrown exception
                 System.out.println("Exception: " + e.getMessage()); // Prints exception message
             } // Ends try-catch block
+
 
             System.out.println("Trying to peek from empty stack"); // Announces peek attempt
             try { // Wraps peek in try-catch
