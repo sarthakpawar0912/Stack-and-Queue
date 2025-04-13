@@ -83,5 +83,7 @@ public class minAddToMakeValidParenthesis { // Declares public class for parenth
         String s7 = "((())()"; // Input: "((())()"
         int result7 = solution.minAddToMakeValid(s7); // Computes additions
         displayTestResult(s7, result7); // Expected: 1
+
     } // Summary: Tests minAddToMakeValid with examples, valid string, all closing, mixed, empty, and complex cases.
+
 }
