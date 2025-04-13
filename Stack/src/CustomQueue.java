@@ -145,12 +145,14 @@ public class CustomQueue { // Declares a public class named CustomQueue for queu
                 System.out.println("Exception: " + e.getMessage()); // Prints message
             } // Ends try-catch
 
+
             System.out.println("Trying to peek front of empty queue"); // Announces front attempt
             try { // Wraps front in try-catch
                 queue3.front(); // Expected: throws exception
             } catch (Exception e) { // Catches exception
                 System.out.println("Exception: " + e.getMessage()); // Prints message
             } // Ends try-catch
+
 
             // Test Case 4: Single element
             System.out.println("\nTest Case 4: Single Element"); // Test case header
@@ -161,6 +163,9 @@ public class CustomQueue { // Declares a public class named CustomQueue for queu
             System.out.println("Is empty? " + queue4.isEmpty()); // Expected: true
         } catch (Exception e) { // Catches unexpected exceptions
             System.out.println("Unexpected error: " + e.getMessage()); // Prints error
+
         } // Ends outer try-catch
+
     } // Summary: Tests queue with default size, custom size, edge cases, and single element, verifying insert, remove, front, isEmpty, and isFull operations.
+
 }
