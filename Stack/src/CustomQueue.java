@@ -81,6 +81,7 @@ public class CustomQueue { // Declares a public class named CustomQueue for queu
             CustomQueue queue1 = new CustomQueue(); // Creates queue with default size
             System.out.println("Is empty? " + queue1.isEmpty()); // Checks if empty (expected: true)
 
+
             // Insert elements
             System.out.println("Inserting 10, 20, 30, 40, 50"); // Announces insertions
             queue1.insert(10); // Inserts 10, end = 1, data[0] = 10
@@ -90,6 +91,7 @@ public class CustomQueue { // Declares a public class named CustomQueue for queu
             queue1.insert(50); // Inserts 50, end = 5, data[4] = 50
             System.out.println("Is empty? " + queue1.isEmpty()); // Checks empty (expected: false)
             System.out.println("Is full? " + queue1.isFull()); // Checks full (expected: false)
+
 
             // Front and remove
             System.out.println("Front: " + queue1.front()); // Views front (expected: 10)
