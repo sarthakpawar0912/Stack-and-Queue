@@ -43,11 +43,13 @@ public class CustomQueue { // Declares a public class named CustomQueue for queu
         return true; // Returns true to confirm successful insertion
     } // Summary: Adds an item to the queue’s rear if there’s space, updating end. Returns false with a message if full.
 
+
     // Removes and returns the front item
     public int remove() throws Exception { // Method to remove front item, may throw exception
         if (isEmpty()) { // Checks if queue is empty
             throw new Exception("Cannot REMOVE From an Empty Queue..!!"); // Throws exception if empty
         } // If empty, execution stops here
+
 
         int removed = data[0]; // Stores front item (index 0) for return
 
@@ -57,7 +59,9 @@ public class CustomQueue { // Declares a public class named CustomQueue for queu
 
         end--; // Decrements end to reflect new queue size
         return removed; // Returns the removed front item
+
     } // Summary: Removes and returns the front item, shifts all elements left, and updates end. Throws exception for empty queue.
+
 
     // Returns the front item without removing it
     public int front() throws Exception { // Method to view front item, may throw exception
@@ -67,8 +71,10 @@ public class CustomQueue { // Declares a public class named CustomQueue for queu
         return data[0]; // Returns front item (index 0) without modification
     } // Summary: Returns the front item without altering the queue, throwing an exception if empty.
 
+
     // Main function to test the CustomQueue implementation
     public static void main(String[] args) { // Entry point for testing queue operations
+
         try { // Wraps tests in try-catch to handle exceptions
             // Test Case 1: Default queue (size = 10)
             System.out.println("Test Case 1: Default Queue (size = 10)"); // Prints test case header
