@@ -155,6 +155,7 @@ public class CustomeStack { // Declares a public class named CustomeStack (note:
                 System.out.println("Exception: " + e.getMessage()); // Prints exception message
             } // Ends try-catch block
 
+
             // Test Case 4: Single element
             System.out.println("\nTest Case 4: Single Element"); // Prints test case header
             CustomeStack stack4 = new CustomeStack(1); // Creates a stack with size 1
@@ -164,7 +165,10 @@ public class CustomeStack { // Declares a public class named CustomeStack (note:
             System.out.println("Is empty? " + stack4.isEmpty()); // Checks if empty (expected: true)
         } catch (Exception e) { // Catches any unexpected exceptions
             System.out.println("Unexpected error: " + e.getMessage()); // Prints error message
-        } // Ends outer try-catch block
+
+       } // Ends outer try-catch block
+
     }
     // Summary: The main method tests the stack with four cases: default size operations, custom size, edge cases (empty stack), and single-element stack. It exercises push, pop, peek, isEmpty, and isFull, verifying correct behavior and error handling through printed outputs.
+
 }
