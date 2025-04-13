@@ -28,7 +28,8 @@ public class InsertionstoBalanceaParenthesesString { // Declares public class fo
                         insertions++; // Needs one ) to complete ))
                     } else { // No open parenthesis
                         insertions += 2; // Needs ( and ) to form ())
-                    } // Handles unmatched single )
+                    }
+                    // Handles unmatched single )
                     i++; // Moves to next character
                 } // End of single ) handling
             } // End of character processing
