@@ -99,6 +99,7 @@ public class CustomQueue { // Declares a public class named CustomQueue for queu
             System.out.println("Remove: " + queue1.remove()); // Removes next (expected: 20)
             System.out.println("Front: " + queue1.front()); // Views new front (expected: 30)
 
+
             // Fill queue
             System.out.println("Inserting 60, 70, 80, 90, 100, 110"); // Announces more insertions
             queue1.insert(60); // end = 4
@@ -109,6 +110,7 @@ public class CustomQueue { // Declares a public class named CustomQueue for queu
             queue1.insert(110); // end = 9
             System.out.println("Is full? " + queue1.isFull()); // Checks full (expected: true)
             queue1.insert(120); // Attempts insert (expected: Queue is Full, false)
+
 
             // Test Case 2: Custom size (3)
             System.out.println("\nTest Case 2: Custom Queue (size = 3)"); // Test case header
