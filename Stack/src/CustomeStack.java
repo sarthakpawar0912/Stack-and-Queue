@@ -1,4 +1,3 @@
-
 public class CustomeStack { // Declares a public class named CustomeStack (note: typo in "Custome", ideally "CustomStack")
 
     protected int[] data; // Array to store stack elements, protected for access within package and subclasses
