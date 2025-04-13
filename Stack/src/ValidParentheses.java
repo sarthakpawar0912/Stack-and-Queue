@@ -86,11 +86,13 @@ public class ValidParentheses { // Declares public class for validating parenthe
         boolean result6 = solution.isValid(s6); // Checks validity
         displayTestResult(s6, result6); // Expected: false
 
+
         // Test Case 7: Complex nested brackets
         System.out.println("Test Case 7: Complex Nested Brackets"); // Test case header
         String s7 = "{[()()]}{}"; // Input: "{[()()]}{}"
         boolean result7 = solution.isValid(s7); // Checks validity
         displayTestResult(s7, result7); // Expected: true
+
 
         // Test Case 8: Mismatched nested brackets
         System.out.println("Test Case 8: Mismatched Nested Brackets"); // Test case header
@@ -98,10 +100,13 @@ public class ValidParentheses { // Declares public class for validating parenthe
         boolean result8 = solution.isValid(s8); // Checks validity
         displayTestResult(s8, result8); // Expected: false
 
+
         // Test Case 9: Empty string
         System.out.println("Test Case 9: Empty String"); // Test case header
         String s9 = ""; // Input: ""
         boolean result9 = solution.isValid(s9); // Checks validity
         displayTestResult(s9, result9); // Expected: true (valid per stack logic)
+
     } // Summary: Tests isValid with all examples, single brackets, complex nesting, mismatched cases, and empty string.
+
 }
