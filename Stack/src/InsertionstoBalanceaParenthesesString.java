@@ -34,9 +34,12 @@ public class InsertionstoBalanceaParenthesesString { // Declares public class fo
             } // End of character processing
         } // End of string iteration
 
+
         insertions += stack.size() * 2; // Each leftover ( needs ))
         return insertions; // Returns total insertions needed
+
     } // Summary: Uses stack to track open (, processes ) in pairs, counts insertions for unmatched or incomplete pairs (O(n) time, O(n) space).
+
 
     // Helper method to display test results
     private static void displayTestResult(String s, int result) { // Prints test case result
@@ -47,6 +50,7 @@ public class InsertionstoBalanceaParenthesesString { // Declares public class fo
 
     // Main function to test minInsertions
     public static void main(String[] args) { // Entry point for testing
+
         InsertionstoBalanceaParenthesesString solution = new InsertionstoBalanceaParenthesesString(); // Creates instance of Solution
 
         // Test Case 1: Example 1 from problem
@@ -96,5 +100,6 @@ public class InsertionstoBalanceaParenthesesString { // Declares public class fo
         String s8 = ")"; // Input: ")"
         int result8 = solution.minInsertions(s8); // Computes insertions
         displayTestResult(s8, result8); // Expected: 2
+
     } // Summary: Tests minInsertions with examples, valid string, all closing, all opening, empty, and single parenthesis cases.
 }
