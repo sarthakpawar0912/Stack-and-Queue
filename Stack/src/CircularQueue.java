@@ -124,6 +124,7 @@ public class CircularQueue { // Declares public class for circular queue impleme
             queue1.display(); // Expected: 30 -> 40 -> 50
             System.out.println("Front: " + queue1.front()); // Expected: 30
 
+
             // Insert to wrap around
             System.out.println("Inserting 60, 70, 80, 90, 100, 110"); // Announces insertions
             queue1.insert(60); // end = 6, size = 4
@@ -140,6 +141,7 @@ public class CircularQueue { // Declares public class for circular queue impleme
             System.out.print("Queue: "); // Labels queue state
             queue1.display(); // Expected: unchanged
 
+
             // Remove and insert to test circularity
             System.out.println("Removing one element"); // Announces removal
             System.out.println("Remove: " + queue1.remove()); // Expected: 30, front = 3
@@ -148,12 +150,14 @@ public class CircularQueue { // Declares public class for circular queue impleme
             System.out.print("Queue: "); // Labels queue state
             queue1.display(); // Expected: 40 -> 50 -> 60 -> 70 -> 80 -> 90 -> 100 -> 110 -> 120
 
+
             // Test Case 2: Custom size (3)
             System.out.println("\nTest Case 2: Custom Queue (size = 3)"); // Test case header
             CircularQueue queue2 = new CircularQueue(3); // Creates queue with size 3
             System.out.print("Queue: "); // Labels initial state
             queue2.display(); // Expected: Empty
             System.out.println("Is empty? " + queue2.isEmpty()); // Expected: true
+
 
             // Insert elements
             System.out.println("Inserting 100, 200, 300, 400"); // Announces insertions
@@ -164,6 +168,7 @@ public class CircularQueue { // Declares public class for circular queue impleme
             queue2.display(); // Expected: 100 -> 200 -> 300
             queue2.insert(400); // Expected: Queue is Full, false
             System.out.println("Is full? " + queue2.isFull()); // Expected: true
+
 
             // Remove and insert
             System.out.println("Removing one element"); // Announces removal
@@ -179,6 +184,7 @@ public class CircularQueue { // Declares public class for circular queue impleme
             System.out.print("Queue: "); // Labels queue state
             queue2.display(); // Expected: Empty
             System.out.println("Is empty? " + queue2.isEmpty()); // Expected: true
+
 
             // Test Case 3: Edge cases (empty queue)
             System.out.println("\nTest Case 3: Edge Cases"); // Test case header
