@@ -18,11 +18,7 @@ public class Main {
         System.out.println(stack.pop());
         System.out.println(stack.pop());
 
-
-
-
-
-        //Queue
+  //Queue
         Queue<Integer>queue=new LinkedList<>();
         queue.add(3);
         queue.add(6);
