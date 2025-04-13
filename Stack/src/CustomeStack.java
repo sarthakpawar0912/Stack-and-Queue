@@ -71,13 +71,16 @@ public class CustomeStack { // Declares a public class named CustomeStack (note:
 
     // Main function to test the CustomeStack implementation
     public static void main(String[] args) { // Entry point for testing the stack
-        try { // Wraps tests in try-catch to handle exceptions
+
+       try {
+           // Wraps tests in try-catch to handle exceptions
             // Test Case 1: Using default size (10)
             System.out.println("Test Case 1: Default Stack (size = 10)"); // Prints test case header
             CustomeStack stack1 = new CustomeStack(); // Creates a stack with default size (10)
             System.out.println("Is empty? " + stack1.isEmpty()); // Checks and prints if stack is empty (expected: true)
 
-            // Push elements
+
+           // Push elements
             System.out.println("Pushing 1, 2, 3, 4, 5"); // Announces push operations
             stack1.push(1); // Pushes 1, ptr = 0, data[0] = 1
             stack1.push(2); // Pushes 2, ptr = 1, data[1] = 2
@@ -87,8 +90,10 @@ public class CustomeStack { // Declares a public class named CustomeStack (note:
             System.out.println("Is empty? " + stack1.isEmpty()); // Checks if stack is empty (expected: false)
             System.out.println("Is full? " + stack1.isFull());   // Checks if stack is full (expected: false)
 
+
             // Peek
             System.out.println("Peek: " + stack1.peek()); // Views top item (expected: 5)
+
 
             // Pop elements
             System.out.println("Pop: " + stack1.pop()); // Pops top item (expected: 5), ptr = 3
