@@ -1,4 +1,3 @@
-
 import java.util.Stack; // Imports Stack class for parentheses matching
 
 public class ValidParentheses { // Declares public class for validating parentheses
@@ -31,6 +30,7 @@ public class ValidParentheses { // Declares public class for validating parenthe
         return stack.isEmpty(); // Returns true if all brackets matched, false if unclosed brackets remain
     } // Summary: Uses stack to match parentheses, ensuring open brackets are closed correctly (O(n) time, O(n) space).
 
+
     // Helper method to display test results
     private static void displayTestResult(String s, boolean result) { // Prints test case result
         System.out.println("Input: s = \"" + s + "\""); // Prints input string
@@ -38,9 +38,12 @@ public class ValidParentheses { // Declares public class for validating parenthe
         System.out.println(); // Adds newline for readability
     } // Summary: Formats test case output for clarity.
 
+
     // Main function to test isValid method
     public static void main(String[] args) { // Entry point for testing
+
         ValidParentheses solution = new ValidParentheses(); // Creates instance of ValidParentheses
+
 
         // Test Case 1: Example 1 from problem
         System.out.println("Test Case 1: Example 1"); // Test case header
@@ -48,11 +51,13 @@ public class ValidParentheses { // Declares public class for validating parenthe
         boolean result1 = solution.isValid(s1); // Checks validity
         displayTestResult(s1, result1); // Expected: true
 
+
         // Test Case 2: Example 2 from problem
         System.out.println("Test Case 2: Example 2"); // Test case header
         String s2 = "()[]{}"; // Input: "()[]{}"
         boolean result2 = solution.isValid(s2); // Checks validity
         displayTestResult(s2, result2); // Expected: true
+
 
         // Test Case 3: Example 3 from problem
         System.out.println("Test Case 3: Example 3"); // Test case header
@@ -60,17 +65,20 @@ public class ValidParentheses { // Declares public class for validating parenthe
         boolean result3 = solution.isValid(s3); // Checks validity
         displayTestResult(s3, result3); // Expected: false
 
+
         // Test Case 4: Example 4 from problem
         System.out.println("Test Case 4: Example 4"); // Test case header
         String s4 = "([])"; // Input: "([])"
         boolean result4 = solution.isValid(s4); // Checks validity
         displayTestResult(s4, result4); // Expected: true
 
+
         // Test Case 5: Single open bracket
         System.out.println("Test Case 5: Single Open Bracket"); // Test case header
         String s5 = "("; // Input: "("
         boolean result5 = solution.isValid(s5); // Checks validity
         displayTestResult(s5, result5); // Expected: false
+
 
         // Test Case 6: Single close bracket
         System.out.println("Test Case 6: Single Close Bracket"); // Test case header
