@@ -100,6 +100,7 @@ public class CustomeStack { // Declares a public class named CustomeStack (note:
             System.out.println("Pop: " + stack1.pop()); // Pops next item (expected: 4), ptr = 2
             System.out.println("Peek: " + stack1.peek()); // Views new top (expected: 3)
 
+
             // Push more elements to fill the stack
             System.out.println("Pushing 6, 7, 8, 9, 10, 11"); // Announces more pushes
             stack1.push(6);  // Pushes 6, ptr = 3
@@ -112,10 +113,12 @@ public class CustomeStack { // Declares a public class named CustomeStack (note:
             System.out.println("Is full? " + stack1.isFull()); // Checks if stack is full (expected: true)
             stack1.push(13); // Attempts to push 13 (expected: prints "Stack is Full", returns false)
 
+
             // Test Case 2: Custom size (3)
             System.out.println("\nTest Case 2: Custom Stack (size = 3)"); // Prints test case header
             CustomeStack stack2 = new CustomeStack(3); // Creates a stack with size 3
             System.out.println("Is empty? " + stack2.isEmpty()); // Checks if empty (expected: true)
+
 
             // Push elements
             System.out.println("Pushing 100, 200, 300, 400"); // Announces push operations
@@ -124,6 +127,7 @@ public class CustomeStack { // Declares a public class named CustomeStack (note:
             stack2.push(300); // Pushes 300, ptr = 2
             stack2.push(400); // Attempts to push 400 (expected: prints "Stack is Full", returns false)
             System.out.println("Is full? " + stack2.isFull()); // Checks if full (expected: true)
+
 
             // Peek and pop
             System.out.println("Peek: " + stack2.peek()); // Views top item (expected: 300)
