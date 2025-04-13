@@ -198,12 +198,14 @@ public class CircularQueue { // Declares public class for circular queue impleme
                 System.out.println("Exception: " + e.getMessage()); // Prints message
             } // Ends try-catch
 
+
             System.out.println("Trying to peek front of empty queue"); // Announces attempt
             try { // Wraps front
                 queue3.front(); // Expected: throws exception
             } catch (Exception e) { // Catches exception
                 System.out.println("Exception: " + e.getMessage()); // Prints message
             } // Ends try-catch
+
 
             // Test Case 4: Single element
             System.out.println("\nTest Case 4: Single Element"); // Test case header
@@ -219,6 +221,9 @@ public class CircularQueue { // Declares public class for circular queue impleme
             System.out.println("Is empty? " + queue4.isEmpty()); // Expected: true
         } catch (Exception e) { // Catches unexpected exceptions
             System.out.println("Unexpected error: " + e.getMessage()); // Prints error
+
         } // Ends outer try-catch
+
     } // Summary: Tests circular queue with default size, custom size, edge cases, and single element, using display to show queue state in linked list-like format.
+
 }
