@@ -1,25 +1,29 @@
-
-
 public class CustomQueue { // Declares a public class named CustomQueue for queue implementation
 
     private int[] data; // Array to store queue elements, private to encapsulate data
+
     private static final int DEFAULT_SIZE = 10; // Constant for default queue size, private, static, and final
+
     int end = 0; // Tracks the rear of the queue (number of elements), initialized to 0 (empty queue)
+
 
     // Constructor for default queue size
     public CustomQueue() { // Defines the no-arg constructor
         this(DEFAULT_SIZE); // Delegates to parameterized constructor with DEFAULT_SIZE (10)
     } // Summary: Creates a queue with default size 10, reusing the parameterized constructor for initialization.
 
+
     // Constructor for custom queue size
     public CustomQueue(int size) { // Defines constructor with size parameter
         this.data = new int[size]; // Initializes data array with specified size, elements default to 0
     } // Summary: Creates a queue with user-defined size, allocating memory for the array.
 
+
     // Checks if the queue is full
     private boolean isFull() { // Private method to check if queue has reached capacity
         return end == data.length; // Returns true if end equals array length (no more space), false otherwise
     } // Summary: Determines if the queue is full by checking if end has reached the array’s capacity, used to prevent overflow.
+
 
     // Checks if the queue is empty
     private boolean isEmpty() { // Private method to check if queue has no elements
