@@ -44,6 +44,7 @@ public class largestRectangleAreaHistogram { // Declares public class for histog
 
         largestRectangleAreaHistogram solution = new largestRectangleAreaHistogram(); // Creates solution instance
 
+
         // Test Case 1: Example 1 from problem
         System.out.println("Test Case 1: Example 1"); // Test case header
         int[] heights1 = {2, 1, 5, 6, 2, 3}; // Input: [2,1,5,6,2,3]
@@ -51,6 +52,7 @@ public class largestRectangleAreaHistogram { // Declares public class for histog
         int result1 = solution.largestRectangleArea(heights1); // Computes max area
         System.out.println("Largest Rectangle Area: " + result1); // Expected: 10
         System.out.println(); // Newline for readability
+
 
         // Test Case 2: Example 2 from problem
         System.out.println("Test Case 2: Example 2"); // Test case header
@@ -60,6 +62,7 @@ public class largestRectangleAreaHistogram { // Declares public class for histog
         System.out.println("Largest Rectangle Area: " + result2); // Expected: 4
         System.out.println(); // Newline for readability
 
+
         // Test Case 3: Single bar
         System.out.println("Test Case 3: Single Bar"); // Test case header
         int[] heights3 = {7}; // Input: [7]
@@ -67,6 +70,7 @@ public class largestRectangleAreaHistogram { // Declares public class for histog
         int result3 = solution.largestRectangleArea(heights3); // Computes max area
         System.out.println("Largest Rectangle Area: " + result3); // Expected: 7
         System.out.println(); // Newline for readability
+
 
         // Test Case 4: All equal heights
         System.out.println("Test Case 4: All Equal Heights"); // Test case header
@@ -76,6 +80,7 @@ public class largestRectangleAreaHistogram { // Declares public class for histog
         System.out.println("Largest Rectangle Area: " + result4); // Expected: 12
         System.out.println(); // Newline for readability
 
+
         // Test Case 5: Zero heights
         System.out.println("Test Case 5: Zero Heights"); // Test case header
         int[] heights5 = {0, 0, 0}; // Input: [0,0,0]
@@ -84,6 +89,7 @@ public class largestRectangleAreaHistogram { // Declares public class for histog
         System.out.println("Largest Rectangle Area: " + result5); // Expected: 0
         System.out.println(); // Newline for readability
 
+
         // Test Case 6: Large input with varied heights
         System.out.println("Test Case 6: Varied Heights"); // Test case header
         int[] heights6 = {1, 2, 3, 4, 5, 4, 3, 2, 1}; // Input: [1,2,3,4,5,4,3,2,1]
@@ -91,5 +97,7 @@ public class largestRectangleAreaHistogram { // Declares public class for histog
         int result6 = solution.largestRectangleArea(heights6); // Computes max area
         System.out.println("Largest Rectangle Area: " + result6); // Expected: 15
         System.out.println(); // Newline for readability
+
     } // Summary: Tests largestRectangleArea with example cases, single bar, equal heights, zero heights, and varied heights.
+
 }
