@@ -41,6 +41,7 @@ public class CustomeStack { // Declares a public class named CustomeStack (note:
     }
     // Summary: This method efficiently checks if the stack is full by comparing the pointer to the last valid array index, used internally to prevent overflow in push.
 
+
     // Pops an item from the stack
     public int pop() throws Exception { // Method to remove and return the top item, may throw an exception
         if (isEmpty()) { // Checks if the stack is empty by calling isEmpty()
@@ -49,6 +50,7 @@ public class CustomeStack { // Declares a public class named CustomeStack (note:
         return data[ptr--]; // Returns the top item and decrements pointer in one step
     }
     // Summary: This method removes and returns the top item, reducing the pointer to reflect the new top. It throws an exception for empty stacks to prevent invalid access, ensuring robustness.
+
 
     // Peeks at the top item without removing it
     public int peek() throws Exception { // Method to view the top item, may throw an exception
@@ -59,11 +61,13 @@ public class CustomeStack { // Declares a public class named CustomeStack (note:
     }
     // Summary: This method allows inspection of the top item without altering the stack, throwing an exception for empty stacks to maintain safety.
 
+
     // Checks if the stack is empty
     private boolean isEmpty() { // Private method to check if stack has no elements
         return ptr == -1; // Returns true if pointer is -1 (initial empty state), false otherwise
     }
     // Summary: This method checks if the stack is empty by verifying if the pointer is at its initial value, used by pop and peek to prevent underflow.
+
 
     // Main function to test the CustomeStack implementation
     public static void main(String[] args) { // Entry point for testing the stack
