@@ -1,4 +1,3 @@
-
 import java.util.Stack; // Imports Stack class for tracking open parentheses
 
 public class minAddToMakeValidParenthesis { // Declares public class for parentheses solution
@@ -24,6 +23,7 @@ public class minAddToMakeValidParenthesis { // Declares public class for parenth
         return unmatchedOpen + unmatchedClose; // Total additions needed
     } // Summary: Uses stack to track unmatched open parentheses, counts unmatched close parentheses, returns total additions (O(n) time, O(n) space).
 
+
     // Helper method to display test results
     private static void displayTestResult(String s, int result) { // Prints test case result
         System.out.println("Input: s = \"" + s + "\""); // Prints input string
@@ -31,8 +31,10 @@ public class minAddToMakeValidParenthesis { // Declares public class for parenth
         System.out.println(); // Adds newline for readability
     } // Summary: Formats test case output for clarity.
 
+
     // Main function to test minAddToMakeValid
     public static void main(String[] args) { // Entry point for testing
+
         minAddToMakeValidParenthesis solution = new minAddToMakeValidParenthesis(); // Creates instance of Solution
 
         // Test Case 1: Example 1 from problem
@@ -47,11 +49,13 @@ public class minAddToMakeValidParenthesis { // Declares public class for parenth
         int result2 = solution.minAddToMakeValid(s2); // Computes additions
         displayTestResult(s2, result2); // Expected: 3
 
+
         // Test Case 3: Valid string
         System.out.println("Test Case 3: Valid String"); // Test case header
         String s3 = "()()"; // Input: "()()"
         int result3 = solution.minAddToMakeValid(s3); // Computes additions
         displayTestResult(s3, result3); // Expected: 0
+
 
         // Test Case 4: All closing
         System.out.println("Test Case 4: All Closing"); // Test case header
@@ -59,17 +63,20 @@ public class minAddToMakeValidParenthesis { // Declares public class for parenth
         int result4 = solution.minAddToMakeValid(s4); // Computes additions
         displayTestResult(s4, result4); // Expected: 3
 
+
         // Test Case 5: Mixed unbalanced
         System.out.println("Test Case 5: Mixed Unbalanced"); // Test case header
         String s5 = "())("; // Input: "())("
         int result5 = solution.minAddToMakeValid(s5); // Computes additions
         displayTestResult(s5, result5); // Expected: 2
 
+
         // Test Case 6: Empty string
         System.out.println("Test Case 6: Empty String"); // Test case header
         String s6 = ""; // Input: ""
         int result6 = solution.minAddToMakeValid(s6); // Computes additions
         displayTestResult(s6, result6); // Expected: 0
+
 
         // Test Case 7: Complex string
         System.out.println("Test Case 7: Complex String"); // Test case header
