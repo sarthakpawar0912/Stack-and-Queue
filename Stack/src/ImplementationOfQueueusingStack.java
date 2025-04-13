@@ -41,10 +41,12 @@ public class ImplementationOfQueueusingStack { // Declares public class to imple
         return s2.peek(); // Returns top of s2 (front of queue) without popping
     } // Summary: Ensures s2 has the front element, then peeks at s2’s top (amortized O(1)).
 
+
     // Returns true if the queue is empty, false otherwise
     public boolean empty() { // Method to check if queue is empty
         return s1.isEmpty() && s2.isEmpty(); // True if both stacks are empty
     } // Summary: Queue is empty only if no elements exist in s1 or s2 (O(1)).
+
 
     // Helper method to display queue contents (for testing)
     private void display() { // Prints queue in FIFO order
@@ -61,6 +63,7 @@ public class ImplementationOfQueueusingStack { // Declares public class to imple
         while (!s1.isEmpty()) { // Moves s1 to s2
             s2.push(s1.pop()); // Reverses order
         } // s1 is now empty
+
         // Print from s2 (front to rear)
         System.out.print("Queue: "); // Labels output
         for (int i = s2.size() - 1; i >= 0; i--) { // Iterates from front to rear
@@ -75,6 +78,7 @@ public class ImplementationOfQueueusingStack { // Declares public class to imple
             s2.push(temp.pop()); // Restores s2
         } // s2 is restored
     } // Summary: Displays queue in FIFO order (front to rear) with arrows, preserving queue state by using a temporary stack.
+
 
     // Main function to test MyQueue implementation
     public static void main(String[] args) { // Entry point for testing
