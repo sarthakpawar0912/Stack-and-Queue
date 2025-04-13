@@ -94,6 +94,7 @@ public class CircularQueue { // Declares public class for circular queue impleme
 
     // Main function to test CircularQueue implementation
     public static void main(String[] args) { // Entry point for testing queue operations
+
         try { // Wraps tests in try-catch to handle exceptions
             // Test Case 1: Default queue (size = 10)
             System.out.println("Test Case 1: Default Queue (size = 10)"); // Prints test case header
@@ -113,6 +114,7 @@ public class CircularQueue { // Declares public class for circular queue impleme
             System.out.println("Is empty? " + queue1.isEmpty()); // Expected: false
             System.out.println("Is full? " + queue1.isFull()); // Expected: false
             System.out.println("Front: " + queue1.front()); // Expected: 10
+
 
             // Remove elements
             System.out.println("Removing two elements"); // Announces removals
