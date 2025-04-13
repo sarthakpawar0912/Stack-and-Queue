@@ -1,10 +1,11 @@
-
 import java.util.Stack; // Imports Stack class for implementation
 
 public class ImplementationOfQueueusingStack { // Declares public class to implement queue using two stacks
 
     private Stack<Integer> s1; // Input stack for push operations
+
     private Stack<Integer> s2; // Output stack for pop and peek operations
+
 
     // Constructor to initialize the queue
     public ImplementationOfQueueusingStack() { // Initializes a new MyQueue instance
@@ -12,10 +13,12 @@ public class ImplementationOfQueueusingStack { // Declares public class to imple
         s2 = new Stack<>(); // Creates empty stack s2 for output
     } // Summary: Initializes two empty stacks to store queue elements, preparing for FIFO operations.
 
+
     // Pushes element x to the back of the queue
     public void push(int x) { // Method to add element to queue’s rear
         s1.push(x); // Pushes x onto s1 (input stack)
     } // Summary: Adds element to s1, which acts as the rear of the queue, maintaining elements in push order (O(1)).
+
 
     // Removes the element from the front of the queue and returns it
     public int pop() { // Method to remove and return front element
@@ -26,6 +29,7 @@ public class ImplementationOfQueueusingStack { // Declares public class to imple
         } // If s2 wasn’t empty, skip transfer
         return s2.pop(); // Pops and returns top of s2 (front of queue)
     } // Summary: Ensures s2 has the front element by transferring from s1 if needed, then pops from s2 (amortized O(1)).
+
 
     // Returns the element at the front of the queue
     public int peek() { // Method to view front element without removal
