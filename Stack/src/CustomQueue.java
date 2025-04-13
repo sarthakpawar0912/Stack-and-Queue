@@ -30,12 +30,14 @@ public class CustomQueue { // Declares a public class named CustomQueue for queu
         return end == 0; // Returns true if end is 0 (no elements), false otherwise
     } // Summary: Checks if the queue is empty by verifying if end is at its initial value, used to prevent underflow.
 
+
     // Inserts an item at the rear of the queue
     public boolean insert(int item) { // Method to add item to queue’s rear, returns boolean for success
         if (isFull()) { // Checks if queue is full
             System.out.println("Queue is Full"); // Prints error message if no space
             return false; // Returns false to indicate insertion failure
         } // If queue is full, execution stops here
+
 
         data[end++] = item; // Stores item at rear index and increments end
         return true; // Returns true to confirm successful insertion
