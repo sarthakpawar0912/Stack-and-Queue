@@ -1,7 +1,9 @@
 public class CustomeStack { // Declares a public class named CustomeStack (note: typo in "Custome", ideally "CustomStack")
 
     protected int[] data; // Array to store stack elements, protected for access within package and subclasses
+
     private static final int DEFAULT_SIZE = 10; // Constant for default stack size, private to this class, static for class-level sharing, final to prevent modification
+
     int ptr = -1; // Pointer to track the top of the stack, initialized to -1 (empty stack)
 
     // Constructor for default stack size
@@ -10,11 +12,13 @@ public class CustomeStack { // Declares a public class named CustomeStack (note:
     }
     // Summary: This constructor ensures a stack is created with the default size of 10 by calling the parameterized constructor, avoiding duplicate initialization logic.
 
+
     // Constructor for custom stack size
     public CustomeStack(int size) { // Defines constructor that accepts a size parameter
         this.data = new int[size]; // Initializes the data array with the specified size, all elements default to 0
     }
     // Summary: This constructor creates a stack with a user-defined size by allocating an array of that size, allowing flexibility in stack capacity.
+
 
     // Pushes an item onto the stack
     public boolean push(int item) { // Method to add an item to the top of the stack, returns boolean to indicate success
@@ -26,8 +30,10 @@ public class CustomeStack { // Declares a public class named CustomeStack (note:
         ptr++; // Increments pointer to point to the next empty slot
         data[ptr] = item; // Stores the item at the current top (ptr index)
         return true; // Returns true to indicate successful push
+
     }
     // Summary: This method adds an item to the top of the stack if there’s space, updating the pointer and array. It returns false and prints a message if the stack is full, ensuring safe operation.
+
 
     // Checks if the stack is full
     private boolean isFull() { // Private method to check if stack has reached capacity
