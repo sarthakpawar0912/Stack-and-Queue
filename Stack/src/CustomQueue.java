@@ -117,6 +117,7 @@ public class CustomQueue { // Declares a public class named CustomQueue for queu
             CustomQueue queue2 = new CustomQueue(3); // Creates queue with size 3
             System.out.println("Is empty? " + queue2.isEmpty()); // Checks empty (expected: true)
 
+
             // Insert elements
             System.out.println("Inserting 100, 200, 300, 400"); // Announces insertions
             queue2.insert(100); // end = 1
@@ -125,12 +126,14 @@ public class CustomQueue { // Declares a public class named CustomQueue for queu
             queue2.insert(400); // Expected: Queue is Full, false
             System.out.println("Is full? " + queue2.isFull()); // Checks full (expected: true)
 
+
             // Front and remove
             System.out.println("Front: " + queue2.front()); // Expected: 100
             System.out.println("Remove: " + queue2.remove()); // Expected: 100
             System.out.println("Remove: " + queue2.remove()); // Expected: 200
             System.out.println("Remove: " + queue2.remove()); // Expected: 300
             System.out.println("Is empty? " + queue2.isEmpty()); // Expected: true
+
 
             // Test Case 3: Edge cases (empty queue)
             System.out.println("\nTest Case 3: Edge Cases"); // Test case header
