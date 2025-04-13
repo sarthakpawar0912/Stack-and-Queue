@@ -1,4 +1,3 @@
-
 import java.util.Stack; // Imports Stack class for monotonic stack implementation
 
 public class largestRectangleAreaHistogram { // Declares public class for histogram solution
@@ -28,6 +27,7 @@ public class largestRectangleAreaHistogram { // Declares public class for histog
 
     // Helper method to display histogram (for visualization in testing)
     private static void displayHistogram(int[] heights) { // Prints histogram as bars
+
         System.out.print("Histogram: ["); // Starts histogram display
         for (int i = 0; i < heights.length; i++) { // Loops through heights
             System.out.print(heights[i]); // Prints height
@@ -38,8 +38,10 @@ public class largestRectangleAreaHistogram { // Declares public class for histog
         System.out.println("]"); // Closes histogram display
     } // Summary: Displays histogram array for clarity in test cases.
 
+
     // Main function to test largestRectangleArea
     public static void main(String[] args) { // Entry point for testing
+
         largestRectangleAreaHistogram solution = new largestRectangleAreaHistogram(); // Creates solution instance
 
         // Test Case 1: Example 1 from problem
