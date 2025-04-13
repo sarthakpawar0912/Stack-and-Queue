@@ -1,9 +1,13 @@
 public class CircularQueue { // Declares public class for circular queue implementation
 
     protected int[] data; // Array to store queue elements, protected for potential subclassing
+
     private static final int DEFAULT_SIZE = 10; // Constant for default queue size, private, static, final
+
     protected int end = 0; // Tracks rear index where next item is inserted, initialized to 0
+
     protected int front = 0; // Tracks front index of first item, initialized to 0
+
     private int size = 0; // Tracks number of elements in queue, initialized to 0 (empty)
 
     // Constructor for default queue size
