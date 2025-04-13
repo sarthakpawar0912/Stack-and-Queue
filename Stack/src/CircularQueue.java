@@ -15,10 +15,12 @@ public class CircularQueue { // Declares public class for circular queue impleme
         this(DEFAULT_SIZE); // Delegates to parameterized constructor with DEFAULT_SIZE (10)
     } // Summary: Creates a circular queue with default size 10, reusing parameterized constructor.
 
+
     // Constructor for custom queue size
     public CircularQueue(int size) { // Constructor with custom size parameter
         this.data = new int[size]; // Initializes data array with specified size, elements default to 0
     } // Summary: Creates a circular queue with user-defined size, allocating array memory.
+
 
     // Checks if the queue is full
     private boolean isFull() { // Private method to check if queue has reached capacity
@@ -29,6 +31,7 @@ public class CircularQueue { // Declares public class for circular queue impleme
     private boolean isEmpty() { // Private method to check if queue has no elements
         return size == 0; // Returns true if size is 0 (no elements), false otherwise
     } // Summary: Checks if queue is empty by verifying if size is 0, preventing underflow.
+
 
     // Inserts an item at the rear of the queue
     public boolean insert(int item) { // Method to add item to rear, returns boolean for success
@@ -41,10 +44,12 @@ public class CircularQueue { // Declares public class for circular queue impleme
         end = end % data.length; // Wraps end around to 0 if it reaches array length (circular)
         size++; // Increments size to track number of elements
         return true; // Returns true to confirm successful insertion
+
     } // Summary: Adds item to rear, updates end with modulo for circularity, and increments size. Returns false if full.
 
     // Removes and returns the front item
     public int remove() throws Exception { // Method to remove front item, may throw exception
+
         if (isEmpty()) { // Checks if queue is empty
             throw new Exception("Cannot REMOVE From an Empty Queue..!!"); // Throws exception if empty
         } // If empty, stops execution here
@@ -54,24 +59,29 @@ public class CircularQueue { // Declares public class for circular queue impleme
         front = front % data.length; // Wraps front around to 0 if it reaches array length
         size--; // Decrements size to reflect removal
         return removed; // Returns removed item
+
     } // Summary: Removes and returns front item, advances front with modulo for circularity, decrements size. Throws exception if empty.
 
     // Returns the front item without removing it
     public int front() throws Exception { // Method to view front item, may throw exception
+
         if (isEmpty()) { // Checks if queue is empty
             throw new Exception("Empty QUEUE..!!"); // Throws exception if empty
         } // If empty, stops execution here
         return data[front]; // Returns front item without modification
+
     } // Summary: Returns front item without altering queue, throws exception if empty.
 
     // Displays queue elements in linked list-like format
     public void display() { // Method to print queue elements with arrows
+
         if (isEmpty()) { // Checks if queue is empty
             System.out.println("Empty"); // Prints "Empty" for no elements
             return; // Exits method
         } // Handles empty case
 
         for (int i = 0; i < size; i++) { // Loops through size elements
+
             int index = (front + i) % data.length; // Calculates index from front, wrapping around
             System.out.print(data[index]); // Prints current element
             if (i < size - 1) { // Checks if not the last element
@@ -79,6 +89,7 @@ public class CircularQueue { // Declares public class for circular queue impleme
             } // Adds arrow unless it’s the last item
         } // Ends loop through elements
         System.out.println(); // Prints newline for clean output
+
     } // Summary: Prints queue elements from front to rear in format "item1 -> item2 -> ...", or "Empty" if no elements, using modulo for circular traversal.
 
     // Main function to test CircularQueue implementation
