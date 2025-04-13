@@ -82,6 +82,7 @@ public class ImplementationOfQueueusingStack { // Declares public class to imple
 
     // Main function to test MyQueue implementation
     public static void main(String[] args) { // Entry point for testing
+
         try { // Wraps tests in try-catch for robustness
             // Test Case 1: Example from problem (matches Input/Output)
             System.out.println("Test Case 1: Example from Problem"); // Test case header
@@ -99,6 +100,7 @@ public class ImplementationOfQueueusingStack { // Declares public class to imple
             queue1.display(); // Expected: Queue: 2
             System.out.println("Empty? " + queue1.empty()); // Expected: false
             queue1.display(); // Expected: Queue: 2
+
 
             // Test Case 2: Multiple pushes and pops
             System.out.println("\nTest Case 2: Multiple Pushes and Pops"); // Test case header
@@ -120,6 +122,7 @@ public class ImplementationOfQueueusingStack { // Declares public class to imple
             queue2.display(); // Expected: Queue: 5 -> 6 -> 7
             System.out.println("Empty? " + queue2.empty()); // Expected: false
 
+
             // Test Case 3: Edge case - Empty queue
             System.out.println("\nTest Case 3: Empty Queue"); // Test case header
             ImplementationOfQueueusingStack queue3 = new ImplementationOfQueueusingStack(); // Creates new queue
@@ -131,6 +134,7 @@ public class ImplementationOfQueueusingStack { // Declares public class to imple
             System.out.println("Pop: " + queue3.pop()); // Expected: 8
             queue3.display(); // Expected: Queue: Empty
             System.out.println("Empty? " + queue3.empty()); // Expected: true
+
 
             // Test Case 4: Single element
             System.out.println("\nTest Case 4: Single Element"); // Test case header
@@ -145,6 +149,9 @@ public class ImplementationOfQueueusingStack { // Declares public class to imple
             System.out.println("Empty? " + queue4.empty()); // Expected: true
         } catch (Exception e) { // Catches unexpected errors
             System.out.println("Unexpected error: " + e.getMessage()); // Prints error
+
         } // Ends try-catch
+
     } // Summary: Tests MyQueue with example case, multiple operations, empty queue, and single element, using display to visualize queue state.
+
 }
