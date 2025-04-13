@@ -37,20 +37,5 @@ public class Main {
         deque.add(32);
         deque.removeFirst();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }
