@@ -1,4 +1,3 @@
-
 public class CircularQueue { // Declares public class for circular queue implementation
 
     protected int[] data; // Array to store queue elements, protected for potential subclassing
