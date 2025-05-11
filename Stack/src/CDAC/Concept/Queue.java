@@ -109,6 +109,7 @@ class LinearQueue {
         System.out.print("Queue: ");
 
         for (int i = front + 1; i <= rear; i++) {
+
             System.out.print(arr[i] + " ");
         }
         System.out.println();
