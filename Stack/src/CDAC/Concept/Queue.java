@@ -5,6 +5,7 @@ import java.util.Scanner;
 class LinearQueue {
 
     private int[] arr; // Array to store queue elements
+
     private int front; // Index of front element
     private int rear; // Index of rear element
 
