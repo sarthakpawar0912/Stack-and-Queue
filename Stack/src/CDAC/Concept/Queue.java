@@ -22,6 +22,7 @@ class LinearQueue {
 
     // Check if queue is empty
     public boolean isEmpty() {
+
         return front == rear && front == -1;
     }
 
