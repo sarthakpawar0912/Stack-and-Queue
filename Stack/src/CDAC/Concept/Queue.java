@@ -1,5 +1,4 @@
 package CDAC.Concept;
-
 import java.util.Scanner;
 
 // Class to implement a linear queue
