@@ -66,6 +66,7 @@ class LinearQueue {
             throw new RuntimeException("Queue is empty");
 
         }
+
         int val = arr[front + 1];
         front++;
         if (front == rear) {
