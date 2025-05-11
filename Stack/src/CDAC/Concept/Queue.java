@@ -55,6 +55,7 @@ class LinearQueue {
         arr[rear] = val;
 
         System.out.println("Enqueued " + val);
+
     }
 
     // Remove element from queue
