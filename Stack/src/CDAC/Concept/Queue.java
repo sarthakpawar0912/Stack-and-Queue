@@ -62,6 +62,7 @@ class LinearQueue {
     public void pop() {
 
         if (isEmpty()) {
+
             throw new RuntimeException("Queue is empty");
         }
         int val = arr[front + 1];
