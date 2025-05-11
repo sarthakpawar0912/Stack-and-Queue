@@ -30,6 +30,7 @@ class LinearQueue {
 
     // Check if queue is full
     public boolean isFull() {
+
         return rear == arr.length - 1;
     }
 
