@@ -60,6 +60,7 @@ class LinearQueue {
 
     // Remove element from queue
     public void pop() {
+
         if (isEmpty()) {
             throw new RuntimeException("Queue is empty");
         }
