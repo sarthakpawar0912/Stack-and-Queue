@@ -102,6 +102,7 @@ class LinearQueue {
         if (isEmpty()) {
 
             System.out.println("Queue is empty");
+
             return;
         }
         System.out.print("Queue: ");
