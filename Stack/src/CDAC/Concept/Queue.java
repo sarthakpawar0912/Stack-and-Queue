@@ -113,6 +113,7 @@ class LinearQueue {
             System.out.print(arr[i] + " ");
 
         }
+
         System.out.println();
     }
 }
