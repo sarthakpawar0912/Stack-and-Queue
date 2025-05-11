@@ -32,6 +32,7 @@ class LinearQueue {
     public boolean isFull() {
 
         return rear == arr.length - 1;
+
     }
 
     // Add element to queue
