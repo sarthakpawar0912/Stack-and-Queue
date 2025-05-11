@@ -51,6 +51,7 @@ class LinearQueue {
         }
 
         rear++;
+
         arr[rear] = val;
         System.out.println("Enqueued " + val);
     }
