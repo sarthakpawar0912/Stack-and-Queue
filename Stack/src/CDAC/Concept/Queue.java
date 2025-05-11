@@ -68,6 +68,7 @@ class LinearQueue {
         }
 
         int val = arr[front + 1];
+
         front++;
         if (front == rear) {
             front = -1;
