@@ -12,6 +12,7 @@ class LinearQueue {
 
     // Constructor to initialize queue
     public LinearQueue(int size) {
+
         arr = new int[size];
         front = -1;
         rear = -1;
