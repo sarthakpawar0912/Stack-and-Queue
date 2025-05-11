@@ -80,6 +80,7 @@ class LinearQueue {
         }
 
         System.out.println("Dequeued " + val);
+
     }
 
     // View front element
