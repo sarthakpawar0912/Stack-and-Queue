@@ -18,6 +18,7 @@ class LinearQueue {
         front = -1;
 
         rear = -1;
+
     }
 
     // Check if queue is empty
