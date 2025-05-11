@@ -37,6 +37,7 @@ class LinearQueue {
 
     // Add element to queue
     public void push(int val) {
+
         if (isFull()) {
             throw new RuntimeException("Queue is full");
         }
