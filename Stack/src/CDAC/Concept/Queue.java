@@ -72,6 +72,7 @@ class LinearQueue {
         front++;
 
         if (front == rear) {
+
             front = -1;
             rear = -1;
         }
