@@ -41,6 +41,7 @@ class LinearQueue {
         if (isFull()) {
 
             throw new RuntimeException("Queue is full");
+
         }
         if (isEmpty()) {
             front = 0;
