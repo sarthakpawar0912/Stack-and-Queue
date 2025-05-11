@@ -45,6 +45,7 @@ class LinearQueue {
         }
 
         if (isEmpty()) {
+
             front = 0;
         }
         rear++;
