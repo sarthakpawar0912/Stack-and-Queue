@@ -78,6 +78,7 @@ class LinearQueue {
             rear = -1;
 
         }
+
         System.out.println("Dequeued " + val);
     }
 
