@@ -100,6 +100,7 @@ class LinearQueue {
     public void display() {
 
         if (isEmpty()) {
+
             System.out.println("Queue is empty");
             return;
         }
