@@ -87,6 +87,7 @@ class LinearQueue {
     public int peek() {
 
         if (isEmpty()) {
+
             throw new RuntimeException("Queue is empty");
         }
         return arr[front + 1];
