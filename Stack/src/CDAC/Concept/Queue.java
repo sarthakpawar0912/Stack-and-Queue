@@ -16,6 +16,7 @@ class LinearQueue {
         arr = new int[size];
 
         front = -1;
+
         rear = -1;
     }
 
