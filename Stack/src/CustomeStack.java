@@ -171,4 +171,4 @@ public class CustomeStack { // Declares a public class named CustomeStack (note:
     }
     // Summary: The main method tests the stack with four cases: default size operations, custom size, edge cases (empty stack), and single-element stack. It exercises push, pop, peek, isEmpty, and isFull, verifying correct behavior and error handling through printed outputs.
 
-}
+ }
