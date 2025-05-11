@@ -85,6 +85,7 @@ class LinearQueue {
 
     // View front element
     public int peek() {
+
         if (isEmpty()) {
             throw new RuntimeException("Queue is empty");
         }
