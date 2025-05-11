@@ -93,6 +93,7 @@ class LinearQueue {
         }
 
         return arr[front + 1];
+
     }
 
     // Display queue contents
