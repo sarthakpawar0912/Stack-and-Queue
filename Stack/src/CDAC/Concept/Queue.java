@@ -25,6 +25,7 @@ class LinearQueue {
     public boolean isEmpty() {
 
         return front == rear && front == -1;
+
     }
 
     // Check if queue is full
