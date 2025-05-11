@@ -91,6 +91,7 @@ class LinearQueue {
             throw new RuntimeException("Queue is empty");
 
         }
+
         return arr[front + 1];
     }
 
