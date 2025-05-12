@@ -117,6 +117,7 @@ public class Stackmain {
 
         // Display menu and handle user input
         do {
+
             System.out.println("\n=== Stack Operations Menu ===");
             System.out.println("0. Exit");
             System.out.println("1. Push");
