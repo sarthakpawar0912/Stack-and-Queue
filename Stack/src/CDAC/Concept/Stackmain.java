@@ -57,6 +57,7 @@ class Stack {
 
     // Method to peek at the top element of the stack
     public int peek() {
+
         if (isEmpty()) {
             throw new RuntimeException("Stack is empty");
         }
