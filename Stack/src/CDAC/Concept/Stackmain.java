@@ -77,6 +77,7 @@ class Stack {
     public boolean isFull() {
 
         return top == capacity - 1;
+
     }
 
     // Method to display the current contents of the stack
