@@ -65,6 +65,7 @@ class Stack {
         }
 
         return arr[top];
+
     }
 
     // Method to check if the stack is empty
