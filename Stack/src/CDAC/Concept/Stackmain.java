@@ -68,6 +68,7 @@ class Stack {
 
     // Method to check if the stack is empty
     public boolean isEmpty() {
+
         return top == -1;
     }
 
