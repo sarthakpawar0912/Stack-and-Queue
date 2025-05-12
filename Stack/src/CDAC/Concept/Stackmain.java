@@ -14,7 +14,9 @@ class Stack {
     public Stack(int size) {
 
         arr = new int[size];
+
         capacity = size;
+
         top = -1; // Stack is initially empty
     }
 
