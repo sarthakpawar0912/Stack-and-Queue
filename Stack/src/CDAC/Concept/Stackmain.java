@@ -50,6 +50,7 @@ class Stack {
         int val = arr[top]; // Store the value to be popped
 
         top--;
+
         System.out.println("Popped " + val + " from the stack");
     }
 
