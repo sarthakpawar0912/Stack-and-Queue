@@ -135,6 +135,7 @@ public class Stackmain {
             choice = sc.nextInt();
 
             switch (choice) {
+
                 case 0:
                     System.out.println("Exiting program...");
                     break;
