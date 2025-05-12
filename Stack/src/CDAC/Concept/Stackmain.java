@@ -143,6 +143,7 @@ public class Stackmain {
                     break;
 
                 case 1:
+
                     System.out.print("Enter the value to be pushed: ");
                     int val = sc.nextInt();
                     s.push(val);
