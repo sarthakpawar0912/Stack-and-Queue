@@ -82,6 +82,7 @@ class Stack {
 
     // Method to display the current contents of the stack
     public void display() {
+
         if (isEmpty()) {
             System.out.println("Stack is empty");
             return;
