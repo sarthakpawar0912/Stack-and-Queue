@@ -70,6 +70,7 @@ class Stack {
     public boolean isEmpty() {
 
         return top == -1;
+
     }
 
     // Method to check if the stack is full
