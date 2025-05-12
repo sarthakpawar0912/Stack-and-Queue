@@ -128,6 +128,7 @@ public class Stackmain {
             System.out.println("4. Display Stack");
 
             System.out.print("Enter your choice: ");
+
             choice = sc.nextInt();
 
             switch (choice) {
