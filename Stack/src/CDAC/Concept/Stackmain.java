@@ -147,6 +147,7 @@ public class Stackmain {
                     System.out.print("Enter the value to be pushed: ");
 
                     int val = sc.nextInt();
+
                     s.push(val);
                     s.display(); // Display stack after push
                     break;
