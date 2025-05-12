@@ -139,6 +139,7 @@ public class Stackmain {
                 case 0:
 
                     System.out.println("Exiting program...");
+
                     break;
                 case 1:
                     System.out.print("Enter the value to be pushed: ");
