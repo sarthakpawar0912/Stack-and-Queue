@@ -46,6 +46,7 @@ class Stack {
             throw new RuntimeException("Stack is empty");
 
         }
+
         int val = arr[top]; // Store the value to be popped
         top--;
         System.out.println("Popped " + val + " from the stack");
