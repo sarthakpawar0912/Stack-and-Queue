@@ -96,6 +96,7 @@ class Stack {
         for (int i = top; i >= 0; i--) {
 
             System.out.print(arr[i] + " ");
+
         }
         System.out.println();
     }
