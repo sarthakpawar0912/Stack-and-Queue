@@ -108,6 +108,7 @@ class Stack {
 public class Stackmain {
 
     public static void main(String[] args) {
+
         Stack s = new Stack(5); // Create a stack of size 5
         Scanner sc = new Scanner(System.in);
         int choice;
