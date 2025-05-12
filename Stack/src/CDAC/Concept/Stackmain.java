@@ -40,6 +40,7 @@ class Stack {
 
     // Method to pop an element from the stack
     public void pop() {
+
         if (isEmpty()) {
             throw new RuntimeException("Stack is empty");
         }
