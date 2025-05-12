@@ -33,6 +33,7 @@ class Stack {
         top++;
 
         arr[top] = val;
+
         System.out.println("Pushed " + val + " onto the stack");
     }
 
