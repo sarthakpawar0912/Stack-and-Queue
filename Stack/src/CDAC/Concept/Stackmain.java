@@ -90,7 +90,9 @@ class Stack {
             return;
 
         }
+
         System.out.print("Stack contents (top to bottom): ");
+
         for (int i = top; i >= 0; i--) {
             System.out.print(arr[i] + " ");
         }
