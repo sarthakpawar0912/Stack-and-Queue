@@ -61,6 +61,7 @@ class Stack {
         if (isEmpty()) {
 
             throw new RuntimeException("Stack is empty");
+
         }
         return arr[top];
     }
