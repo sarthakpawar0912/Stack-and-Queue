@@ -158,6 +158,7 @@ public class Stackmain {
 
                     s.pop();
                     s.display(); // Display stack after pop
+
                     break;
                 case 3:
                     System.out.println("The value at the top of the stack is: " + s.peek());
