@@ -25,6 +25,7 @@ class Stack {
     public void push(int val) {
 
         if (isFull()) {
+
             throw new RuntimeException("Stack is full");
         }
         top++;
