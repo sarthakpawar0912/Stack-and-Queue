@@ -62,7 +62,6 @@ class Stack {
             throw new RuntimeException("Stack is empty");
         }
         return arr[top];
-
     }
 
     // Method to check if the stack is empty
