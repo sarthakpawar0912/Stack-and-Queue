@@ -29,6 +29,7 @@ class Stack {
             throw new RuntimeException("Stack is full");
 
         }
+
         top++;
         arr[top] = val;
         System.out.println("Pushed " + val + " onto the stack");
