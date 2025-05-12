@@ -18,6 +18,7 @@ class Stack {
         capacity = size;
 
         top = -1; // Stack is initially empty
+
     }
 
     // Method to push an element onto the stack
