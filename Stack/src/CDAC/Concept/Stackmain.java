@@ -165,6 +165,7 @@ public class Stackmain {
                 case 3:
 
                     System.out.println("The value at the top of the stack is: " + s.peek());
+
                     s.display(); // Display stack after peek
                     break;
                 case 4:
