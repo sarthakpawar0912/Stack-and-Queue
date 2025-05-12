@@ -52,6 +52,7 @@ class Stack {
         top--;
 
         System.out.println("Popped " + val + " from the stack");
+
     }
 
     // Method to peek at the top element of the stack
