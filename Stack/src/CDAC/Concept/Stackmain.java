@@ -167,8 +167,11 @@ public class Stackmain {
                     System.out.println("The value at the top of the stack is: " + s.peek());
 
                     s.display(); // Display stack after peek
+
                     break;
+
                 case 4:
+
                     s.display(); // Display current stack contents
                     break;
                 default:
