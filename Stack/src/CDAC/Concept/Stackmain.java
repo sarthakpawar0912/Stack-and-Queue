@@ -157,6 +157,7 @@ public class Stackmain {
                 case 2:
 
                     s.pop();
+
                     s.display(); // Display stack after pop
 
                     break;
