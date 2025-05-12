@@ -123,6 +123,7 @@ public class Stackmain {
             System.out.println("0. Exit");
             System.out.println("1. Push");
             System.out.println("2. Pop");
+
             System.out.println("3. Peek");
 
             System.out.println("4. Display Stack");
