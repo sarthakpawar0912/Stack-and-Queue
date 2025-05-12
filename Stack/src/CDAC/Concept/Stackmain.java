@@ -12,6 +12,7 @@ class Stack {
 
     // Constructor to initialize the stack
     public Stack(int size) {
+
         arr = new int[size];
         capacity = size;
         top = -1; // Stack is initially empty
