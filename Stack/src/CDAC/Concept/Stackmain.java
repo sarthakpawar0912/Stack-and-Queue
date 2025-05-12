@@ -35,6 +35,7 @@ class Stack {
         arr[top] = val;
 
         System.out.println("Pushed " + val + " onto the stack");
+
     }
 
     // Method to pop an element from the stack
