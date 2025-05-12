@@ -44,6 +44,7 @@ class Stack {
         if (isEmpty()) {
 
             throw new RuntimeException("Stack is empty");
+
         }
         int val = arr[top]; // Store the value to be popped
         top--;
