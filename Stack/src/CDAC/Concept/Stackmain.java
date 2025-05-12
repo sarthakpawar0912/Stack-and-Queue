@@ -153,6 +153,7 @@ public class Stackmain {
                     s.display(); // Display stack after push
 
                     break;
+
                 case 2:
                     s.pop();
                     s.display(); // Display stack after pop
