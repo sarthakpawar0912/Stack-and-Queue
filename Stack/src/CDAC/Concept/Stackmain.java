@@ -141,6 +141,7 @@ public class Stackmain {
                     System.out.println("Exiting program...");
 
                     break;
+
                 case 1:
                     System.out.print("Enter the value to be pushed: ");
                     int val = sc.nextInt();
