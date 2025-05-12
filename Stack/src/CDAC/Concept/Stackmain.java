@@ -84,6 +84,7 @@ class Stack {
     public void display() {
 
         if (isEmpty()) {
+
             System.out.println("Stack is empty");
             return;
         }
