@@ -149,7 +149,9 @@ public class Stackmain {
                     int val = sc.nextInt();
 
                     s.push(val);
+
                     s.display(); // Display stack after push
+
                     break;
                 case 2:
                     s.pop();
