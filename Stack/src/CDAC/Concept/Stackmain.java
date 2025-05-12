@@ -86,7 +86,9 @@ class Stack {
         if (isEmpty()) {
 
             System.out.println("Stack is empty");
+
             return;
+
         }
         System.out.print("Stack contents (top to bottom): ");
         for (int i = top; i >= 0; i--) {
