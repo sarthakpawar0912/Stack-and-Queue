@@ -27,6 +27,7 @@ class Stack {
         if (isFull()) {
 
             throw new RuntimeException("Stack is full");
+
         }
         top++;
         arr[top] = val;
