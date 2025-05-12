@@ -23,6 +23,7 @@ class Stack {
 
     // Method to push an element onto the stack
     public void push(int val) {
+
         if (isFull()) {
             throw new RuntimeException("Stack is full");
         }
