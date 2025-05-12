@@ -75,6 +75,7 @@ class Stack {
 
     // Method to check if the stack is full
     public boolean isFull() {
+
         return top == capacity - 1;
     }
 
