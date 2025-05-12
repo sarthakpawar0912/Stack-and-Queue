@@ -7,6 +7,7 @@ class Stack {
     private int[] arr; // Array to store stack elements
 
     private int top; // Index of the top element
+
     private int capacity; // Maximum capacity of the stack
 
     // Constructor to initialize the stack
