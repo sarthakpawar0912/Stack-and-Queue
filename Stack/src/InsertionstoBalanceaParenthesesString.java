@@ -20,6 +20,7 @@ public class InsertionstoBalanceaParenthesesString { // Declares public class fo
                 stack.push(ch); // Pushes to stack, expecting )) later
 
                 i++; // Moves to next character
+
             } else { // If closing parenthesis
                 if (i + 1 < s.length() && s.charAt(i + 1) == ')') { // Checks for )) pair
                     if (!stack.isEmpty()) { // If there’s an open parenthesis
