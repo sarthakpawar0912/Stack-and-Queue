@@ -18,6 +18,7 @@ public class InsertionstoBalanceaParenthesesString { // Declares public class fo
             if (ch == '(') { // If open parenthesis
 
                 stack.push(ch); // Pushes to stack, expecting )) later
+
                 i++; // Moves to next character
             } else { // If closing parenthesis
                 if (i + 1 < s.length() && s.charAt(i + 1) == ')') { // Checks for )) pair
