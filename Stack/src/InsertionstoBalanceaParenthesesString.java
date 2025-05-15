@@ -16,6 +16,7 @@ public class InsertionstoBalanceaParenthesesString { // Declares public class fo
             char ch = s.charAt(i); // Gets current character
 
             if (ch == '(') { // If open parenthesis
+
                 stack.push(ch); // Pushes to stack, expecting )) later
                 i++; // Moves to next character
             } else { // If closing parenthesis
