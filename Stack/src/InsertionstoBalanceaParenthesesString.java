@@ -26,6 +26,7 @@ public class InsertionstoBalanceaParenthesesString { // Declares public class fo
                 if (i + 1 < s.length() && s.charAt(i + 1) == ')') { // Checks for )) pair
 
                     if (!stack.isEmpty()) { // If there’s an open parenthesis
+
                         stack.pop(); // Pops matching ( to form ()))
                     } else { // No open parenthesis
                         insertions++; // Needs ( to match ))
