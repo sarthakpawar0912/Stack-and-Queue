@@ -12,6 +12,7 @@ public class InsertionstoBalanceaParenthesesString { // Declares public class fo
         int i = 0; // Index to iterate through string
 
         while (i < s.length()) { // Loops through string characters
+
             char ch = s.charAt(i); // Gets current character
 
             if (ch == '(') { // If open parenthesis
