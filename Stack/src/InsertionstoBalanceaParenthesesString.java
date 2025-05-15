@@ -8,6 +8,7 @@ public class InsertionstoBalanceaParenthesesString { // Declares public class fo
         Stack<Character> stack = new Stack<>();
 
         int insertions = 0; // Counter for required insertions
+
         int i = 0; // Index to iterate through string
 
         while (i < s.length()) { // Loops through string characters
